@@ -1,0 +1,202 @@
+/**
+Theme Name: astra child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap'); */
+
+/* GENERAL */
+
+body{
+    font-family: "Syne";
+}
+
+/* HEADER */
+
+.site-header .menu-item a{
+    color:#000000 !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.site-header .menu-item a:active{
+    color:#000000 !important;
+}
+
+.site-header .site-navigation .main-navigation .highlight-menu a{
+    color: #ffffff !important;
+    background: #DC9F96;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.site-header .site-navigation .main-navigation .highlight-menu a:hover {
+    color: #ffffff !important;
+    background: #C02E44;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.site-header .site-navigation .main-navigation .highlight-menu a:active {
+    color: #ffffff !important;
+}
+
+.site-header .site-navigation .main-navigation .highlight-menu a:visited {
+    color: #ffffff !important;
+
+}
+
+.site-header .menu-item a:hover{
+    color:#000000;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.site-header .menu-item a:visited{
+    color:#000000 ;
+}
+
+.ast-primary-header-bar{
+    border-style: none;
+}
+
+
+/* FOOTER */
+
+.site-primary-footer-wrap[data-section="section-primary-footer-builder"] {    
+    border-style: none;
+}
+
+.site-primary-footer-wrap{
+    padding-top: 0;
+    padding-bottom:0;
+}
+
+.ast-builder-grid-row-container-inner{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* HOME */
+
+.entry-content .title-home{
+    font-weight: 800;
+    color:#3b8e46;
+    font-size:38px;
+    text-transform:uppercase;
+}
+
+.entry-content .text-l{
+    font-weight: 800;
+    font-size:38px;
+    text-transform:uppercase;
+}
+
+.entry-content .subtitle-green{
+    font-weight: 700;
+    color:#3b8e46;
+    font-size:30px;
+}
+
+.entry-content .wp-block-group .text-l{
+    font-weight: 800;
+    font-size:30px;
+}
+
+.entry-content .text-m{
+    font-weight: 400;
+    font-size:20px;
+}
+
+.entry-content .text-s{
+    font-weight: 700;
+    font-size:30px;
+}
+
+.entry-content .text-xs{
+    font-weight: 700;
+    font-size:20px;
+}
+
+
+.entry-content .text-green{
+    color:#3b8e46;
+}
+
+.entry-content .text-pink{
+    color:#D2776A;
+}
+
+
+.entry-content .subtitle-pink{
+    color: #D2776A;
+    font-size:30px;
+    font-weight:800 !important;
+    text-transform: uppercase;
+}
+
+.entry-content .wp-block-group .wp-block-columns .cover-m .wp-block-cover__image-background{
+    width: 393px;
+    height: 262px;
+}
+
+.entry-content .wp-block-group .wp-block-columns .wp-block-cover{
+    width: 393px;
+    height: 262px;
+}
+
+.menu-toggle, button, .ast-button, .ast-custom-button, .button, input#submit, input[type="button"], input[type="submit"], input[type="reset"], #comments .submit, .search .search-submit, form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button, body .wp-block-file .wp-block-file__button, .search .search-submit, .woocommerce-js a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .wc-block-grid__product-onsale, [CLASS*="wc-block"] button, .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping), .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout, .woocommerce button.button.alt.disabled.wc-variation-selection-needed{
+    background-color: #ece2da ;
+    padding: 9px 57px 9px 56px;
+    font-size: 15px;
+    line-height: 37px;
+}
+
+.letter-background img{
+    -webkit-mask-image: url(./wp-content/themes/astra-child/assets/images/P.svg);
+    mask-image: url(./wp-content/themes/astra-child/assets/images/P.svg);
+    -webkit-mask-mode: alpha;
+    mask-mode: alpha;
+    -webkit-mask-size: 100px 100px;
+    mask-size: 100px 100px;
+}
+/* border-bottom-width
+padding-bottom */
+
+
+
+.deco-picture::after{
+    content: url("/wp-content/themes/astra-child/assets/images/Group 4.png");
+    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
+    position: absolute;
+    top:786.27px;
+    left : 854.85px;
+}
+
+.deco-picture::before{
+    content: url("/wp-content/themes/astra-child/assets/images/Group 4.png");
+    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+
+.light-color-section{
+    background-color: #E3D9D0;
+}
+
+
+
+/* <svg xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
+  <path d= fill="#3B8E46"/>
+  <path d="M57.2259 4.19651C57.449 4.06766 57.5255 3.78228 57.3966 3.5591L57.1633 3.15501C57.0345 2.93183 56.7491 2.85536 56.5259 2.98421L0.760149 35.1806L1.46007 36.3929L57.2259 4.19651Z" fill="#3B8E46"/>
+</svg> */ */
