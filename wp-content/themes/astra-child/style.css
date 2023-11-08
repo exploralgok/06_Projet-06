@@ -155,13 +155,12 @@ body{
     height: 262px;
 }
 
-.menu-toggle, button, .ast-button, .ast-custom-button, .button, input#submit, input[type="button"], input[type="submit"], input[type="reset"], #comments .submit, .search .search-submit, form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button, body .wp-block-file .wp-block-file__button, .search .search-submit, .woocommerce-js a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .wc-block-grid__product-onsale, [CLASS*="wc-block"] button, .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping), .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout, .woocommerce button.button.alt.disabled.wc-variation-selection-needed{
+/* .menu-toggle, button, .ast-button, .ast-custom-button, .button, input#submit, input[type="reset"], #comments .submit, .search .search-submit, form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button, body .wp-block-file .wp-block-file__button, .search .search-submit, .woocommerce-js a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .wc-block-grid__product-onsale, [CLASS*="wc-block"] button, .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping), .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout, .woocommerce button.button.alt.disabled.wc-variation-selection-needed{
     background-color: #ece2da ;
     padding: 9px 57px 9px 56px;
     font-size: 15px;
     line-height: 37px;
-}
-
+} */
 
 
 .entry-content .deco-picture{
@@ -210,22 +209,124 @@ body{
 }
 
 
+.fraise::after{
+content:"Fraise";
+display: block;
+position:absolute;
+color: white;
+font-size: 48px;
+font-family: Syne;
+font-weight: 800;
+padding-left:49px;
+}
+
+
 /* RENCONTRER  */
 
 .deco-picture-alone::after{
-    content: url("/wp-content/themes/astra-child/assets/images/Group 4.png");
-    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
     position: absolute;
+    content: "";
+    display: block;
+    height: 190px;
+    width: 210px;
+    background-image: url("./assets/images/Group 4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:38%;
+    right :15%;
 }
 
 .flower-one::before{
-    content: url("/wp-content/themes/astra-child/assets/images/Group 2.svg");
-    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
     position: absolute;
+    content: "";
+    display: block;
+    height: 147px;
+    width: 134px;
+    background-image: url("./assets/images/Group 2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:150px;
+    left :20%;
 }
 
 .flower-two::before{
-    content: url("/wp-content/themes/astra-child/assets/images/Group 16.svg");
-    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
     position: absolute;
+    content: "";
+    display: block;
+    height: 147px;
+    width: 134px;
+    background-image: url("./assets/images/Group 16.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom:10%;
+    left :35%;
+
+
+}
+
+
+/* form */
+
+/* .entry-content .wpcf7 .js .wpcf7-form-control .wpcf7-submit .has-spinner{
+    color: white;
+font-size: 15px;
+font-family: Syne;
+font-weight: 400;
+line-height: 37px;
+background-color: #E0B9B4;
+} */
+
+input[type="submit"]{
+    color: white;
+    font-size: 15px;
+    font-family: Syne;
+    font-weight: 400;
+    line-height: 37px;
+    background-color: #E0B9B4;
+    padding: 9px 57px 9px 56px;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    color: white;
+    font-size: 15px;
+    font-family: Syne;
+    font-weight: 400;
+    line-height: 37px;
+    background-color: #C02E44;
+    padding: 9px 57px 9px 56px;
+    border-radius: 5px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    display: block;
+    margin: 0 auto;
+ }
+
+ .entry-content .center-bloc-s{
+    padding:186px 300px 60px 300px;
+ }
+
+ .wpcf7-form p{
+    font-size : 20px;
+    }
+
+.round-section{
+    border-radius:0px 0px 50% 50% / 0px 0px 100px 100px
+}
+
+
+.round-section-shadow{
+height: 60px;
+width: 100%;
+background-color: #ECE2DA;
+border-radius: 0 0 80% 80%;
+box-shadow: 0 10px 0 #dcd5cf;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border: none;
+}
+ 
+.entry-content .wp-block-group .wp-container-8 .wpcf7 form.unaccepted .wpcf7-response-output {
+    border:none; /* Yellow */
 }
