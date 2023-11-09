@@ -137,6 +137,9 @@ body{
     color:#D2776A;
 }
 
+.entry-content .text-white{
+    color:#ffffff;
+}
 
 .entry-content .subtitle-pink{
     color: #D2776A;
@@ -232,7 +235,7 @@ padding-left:49px;
     background-image: url("./assets/images/Group 4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top:38%;
+    top:700px;
     right :15%;
 }
 
@@ -329,4 +332,55 @@ box-shadow: 0 10px 0 #dcd5cf;
  
 .entry-content .wp-block-group .wp-container-8 .wpcf7 form.unaccepted .wpcf7-response-output {
     border:none; /* Yellow */
+}
+
+
+.site-footer::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 120px;
+    width: 100%;
+    background-image: url("./assets/images/Group 17.png");
+    background-size: contain;
+}
+
+
+/* .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  } */
+
+
+  /* Commande */
+
+.entry-content .wpcf7 .row{
+    display:flex;
+    flex-direction: row;
+  }
+
+  
+.entry-content .wpcf7 .column{
+    display:flex;
+    flex-direction: column;
+    padding : 0px 45px 0px 45px;
+    border: solid 1px #FFFFFF;
+  }
+
+.entry-content .wpcf7 .column h2{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.entry-content .wpcf7 .number-select{
+    width: 100px;
+    height: 56px;
+    padding-right : 180px;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
 }
