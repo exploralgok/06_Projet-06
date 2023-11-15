@@ -46,6 +46,11 @@ function ajouter_lien_admin_menu($items) {
     }
     return $items;
 }
+
 add_filter('wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 1);
+
+
+add_filter('wpcf7_autop_or_not', '__return_false');
+
 
 ?>

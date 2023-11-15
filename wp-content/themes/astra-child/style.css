@@ -309,9 +309,20 @@ input.wpcf7-form-control.wpcf7-submit {
     padding:186px 300px 60px 300px;
  }
 
- .wpcf7-form p{
+ .wpcf7-form label{
     font-size : 20px;
-    }
+    color:#ffffff;
+ } 
+
+.wpcf7-form-control-wrap{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+/* ne doit pas etre sur les quantités */
+.wpcf7 input:not([type=submit]){
+    border-radius: 7px;
+}
 
 .round-section{
     border-radius:0px 0px 50% 50% / 0px 0px 100px 100px
@@ -365,10 +376,23 @@ box-shadow: 0 10px 0 #dcd5cf;
     display:flex;
     flex-direction: column;
     padding : 0px 45px 0px 45px;
-    border: solid 1px #FFFFFF;
   }
 
-.entry-content .wpcf7 .column h2{
+  /* ajouter deux classes à contact form */
+  .entry-content .wpcf7 .column-one-border{
+    display:flex;
+    flex-direction: column;
+    padding : 0px 45px 0px 45px;
+    border-right: solid 1px #FFFFFF;
+}
+
+.entry-content .wpcf7 h2{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.entry-content .wpcf7 h2{
     color: #FFF;
     font-size: 30px;
     font-weight: 700;
@@ -383,4 +407,9 @@ box-shadow: 0 10px 0 #dcd5cf;
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
     margin: 0 !important;
+}
+
+
+.primary .site-main .entry-content .green-background{
+    background-color: #3B8E46;
 }
