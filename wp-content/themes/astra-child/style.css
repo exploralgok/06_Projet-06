@@ -400,7 +400,7 @@ display:block;
     margin-bottom: 0px;
 }
 
-.entry-content .wpcf7 h2{
+.entry-content h2{
     color: #FFF;
     font-size: 30px;
     font-weight: 700;
@@ -420,6 +420,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .primary .site-main .entry-content .green-background{
     background-color: #3B8E46;
+    padding: 70px 270px 135px 270px;
 }
 
 
@@ -428,16 +429,17 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     display:flex;
     flex-direction: row;
     margin-bottom : 30px;
-    justify-content : space-evenly;
+    justify-content : space-around;
     padding-bottom: 39px;
 }
 
 /* faire une classe pour no border radius  */
 
+
 .entry-content .left-content{
-    display: inline-block;
+    /* display: inline-block;
     width: 100%;
-    text-align: left;
+    text-align: left; */
     border-top : solid 1px #ffffff;
     padding-top: 39px;
     margin-top : 69px;
