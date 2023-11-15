@@ -314,10 +314,6 @@ input.wpcf7-form-control.wpcf7-submit {
     color:#ffffff;
  } 
 
-.wpcf7-form-control-wrap{
-    padding-top: 10px;
-    padding-bottom:10px;
-}
 
 /* ne doit pas etre sur les quantités */
 .wpcf7 input:not([type=submit]){
@@ -369,27 +365,39 @@ box-shadow: 0 10px 0 #dcd5cf;
 .entry-content .wpcf7 .row{
     display:flex;
     flex-direction: row;
+    margin-bottom : 30px;
+    justify-content : space-evenly;
   }
 
   
 .entry-content .wpcf7 .column{
     display:flex;
     flex-direction: column;
-    padding : 0px 45px 0px 45px;
+    padding : 0px 0px 0px 45px;
   }
 
-  /* ajouter deux classes à contact form */
+  /* ajouter deux classes à contact form classe dans les crochets*/ 
   .entry-content .wpcf7 .column-one-border{
     display:flex;
     flex-direction: column;
-    padding : 0px 45px 0px 45px;
+    padding : 0px 45px 0px 0px;
     border-right: solid 1px #FFFFFF;
 }
 
+.entry-content .wpcf7 label{
+padding-top : 30px;
+display:block;
+}
+
+.wpcf7-form-control-wrap{
+    padding-top: 10px;
+}
+
 .entry-content .wpcf7 h2{
     color: #FFF;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 
 .entry-content .wpcf7 h2{
@@ -398,11 +406,11 @@ box-shadow: 0 10px 0 #dcd5cf;
     font-weight: 700;
 }
 
+    /* decentre le form car ajoute marge au dernier */
 .entry-content .wpcf7 .number-select{
-    width: 100px;
-    height: 56px;
-    padding-right : 180px;
-}
+    width: 39px; 
+} 
+  
 
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
@@ -412,4 +420,25 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .primary .site-main .entry-content .green-background{
     background-color: #3B8E46;
+}
+
+
+.entry-content .wpcf7 .row-one-border{
+    border-bottom: solid 1px #ffffff;
+    display:flex;
+    flex-direction: row;
+    margin-bottom : 30px;
+    justify-content : space-evenly;
+    padding-bottom: 39px;
+}
+
+/* faire une classe pour no border radius  */
+
+.entry-content .left-content{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    border-top : solid 1px #ffffff;
+    padding-top: 39px;
+    margin-top : 69px;
 }
