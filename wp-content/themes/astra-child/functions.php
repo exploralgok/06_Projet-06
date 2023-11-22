@@ -31,23 +31,39 @@ function add_google_fonts() {
 
 
 
-function ajouter_lien_admin_menu($items) {
-    if (is_user_logged_in() && current_user_can('administrator')) {
-        $lien_admin = '<li class="menu-item"><a href="http://localhost:8888/wp-admin/"  class="menu-link">Admin</a></li>';
+function ajouter_lien_admin_menu($items, $args) {
+     if ($args->theme_location == 'primary' && is_user_logged_in() && current_user_can('administrator')) {
+         $lien_admin = '<li class="menu-item"><a href="http://localhost:8888/wp-admin/"  class="menu-link">Admin</a></li>';
         
-        // Divisez le menu en un tableau d'éléments
-        $menu_items = explode('</li>', $items);
+         // Divisez le menu en un tableau d'éléments
+         $menu_items = explode('</li>', $items);
 
-        // Insérez le lien administrateur en deuxième position
-        array_splice($menu_items, 1, 0, $lien_admin);
+         // Insérez le lien administrateur en deuxième position
+         array_splice($menu_items, 1, 0, $lien_admin);
 
-        // Rejoignez à nouveau les éléments du menu en une chaîne
-        $items = implode('</li>', $menu_items);
-    }
-    return $items;
-}
+         // Rejoignez à nouveau les éléments du menu en une chaîne
+         $items = implode('</li>', $menu_items);
+     }
+     return $items;
+ }
 
-add_filter('wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 1);
+ add_filter('wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 2);
+
+
+// ne prends pas en compte le css dans la version
+// function ajouter_lien_admin_menu( $args = '' ) {
+//     if( is_user_logged_in() ) {
+//     // Logged in menu to display
+//     $args['menu'] = 5;
+     
+//     } else {
+//     // Non-logged-in menu to display
+//     $args['menu'] = 3;
+//     }
+//     return $args;
+//     }
+
+// add_filter( 'wp_nav_menu_args', 'ajouter_lien_admin_menu' );
 
 
 add_filter('wpcf7_autop_or_not', '__return_false');
