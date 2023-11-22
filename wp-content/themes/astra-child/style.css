@@ -225,19 +225,6 @@ body{
     transition: none !important;
 }
 
-
-.fraise::after{
-content:"Fraise";
-display: block;
-position:absolute;
-color: white;
-font-size: 48px;
-font-family: Syne;
-font-weight: 800;
-padding-left:49px;
-}
-
-
 /* RENCONTRER  */
 
 .deco-picture-alone::after{
@@ -472,4 +459,39 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 .equal-repartition{
     flex-wrap: nowrap;
     width: 100%;
+}
+
+.wp-block-gallery.has-nested-images:not(.is-cropped) figure.wp-block-image:not(#individual-image){
+width: 393px;
+height: 262px;
+}
+
+.entry-content .wp-block-group .galerie {
+    JUSTIFY-CONTENT: center;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+    background: none;
+    padding: 0;
+    margin:0;
+    font-size: 48px;
+    font-weight: 800;
+    overflow: visible;
+    text-transform: uppercase;
+    line-height: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: unset;
+}
+
+
+.wp-block-gallery.has-nested-images figure.wp-block-image img{
+    width: 393px;
+height: 262px;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image{
+    flex-grow:unset;
 }
