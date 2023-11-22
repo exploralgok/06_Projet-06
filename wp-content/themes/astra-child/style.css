@@ -166,14 +166,29 @@ body{
 } */
 
 
+
 .entry-content .deco-picture{
-    margin:-150px;
+    width: 234px;
+    height: 498px;
+    z-index: 8;
+    position: relative;
     /* position:relative; */
 }
 
-.deco-picture::before{
+.entry-content .deco-picture img{
+    z-index: 1;
+    position: relative;
+    /* position:relative; */
+}
+
+/* .deco-picture{
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+} */
+
+.deco-picture::after{
     content: "";
-    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
    display: block;
     height: 400px;
     width: 350px;
@@ -181,25 +196,24 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top:16%;
-    left : 30%;
-    /* top:30%%;
-    left:25%; */
+    top : 15%;
+    left : 58%;
 }
 
-.deco-picture::after{
+
+
+.deco-picture::before{
     content: "";
     display: block;
     height: 400px;
     width: 350px;
     background-image: url("./assets/images/Group 4.png");
-    /* offset-path: path("M40.8482 31.288C53.6907 20.9108 57.3141 8.30754 57.5574 3.19683C53.0117 0.855599 40.34 -2.21325 24.9318 3.72006C9.33437 9.72624 7.32346 24.7902 8.2482 31.6554C13.7321 35.8903 27.848 41.7927 40.8482 31.288Z"); */
     position: absolute;
     transform: scaleX(-1);
     background-repeat: no-repeat;
     background-size: contain;
-    top:16%;
-    right :28%;
+    top : 15% ;
+    right :42% ; 
 }
 
 .light-color-section{
@@ -443,4 +457,19 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     border-top : solid 1px #ffffff;
     padding-top: 39px;
     margin-top : 69px;
+}
+
+.wp-block-buttons>.wp-block-button{
+    background-color: #ece2da;
+}
+
+
+/* .wp-container-29.wp-container-29, .wp-container-31.wp-container-31, .wp-container-33.wp-container-33 {
+    flex-wrap: nowrap;
+    width: 100%;
+} */
+
+.equal-repartition{
+    flex-wrap: nowrap;
+    width: 100%;
 }
