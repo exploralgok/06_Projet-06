@@ -236,8 +236,10 @@ body{
     background-image: url("./assets/images/Group 4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top:700px;
-    right :15%;
+    top:37.7%;
+    right :27%;
+    transform: scaleX(-1);
+    ;
 }
 
 .flower-one::before{
@@ -249,21 +251,21 @@ body{
     background-image: url("./assets/images/Group 2.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    top:150px;
-    left :20%;
+    top:9.5%;
+    left :29%;
 }
 
 .flower-two::before{
     position: absolute;
     content: "";
     display: block;
-    height: 147px;
-    width: 134px;
-    background-image: url("./assets/images/Group 16.svg");
+    height: 150px;
+    width: 135px;
+    background-image: url("./assets/images/Group 16.png");
     background-repeat: no-repeat;
     background-size: contain;
-    bottom:10%;
-    left :35%;
+    bottom:13.5%;
+    left :38%;
 
 
 }
@@ -289,7 +291,10 @@ input[type="submit"]{
     background-color: #E0B9B4;
     padding: 9px 57px 9px 56px;
     border-radius: 5px;
+    margin-top : 20px;
+    margin-bottom : 80px
 }
+
 input[type="submit"]:hover{
     color: white;
     font-size: 15px;
@@ -303,7 +308,7 @@ input[type="submit"]:hover{
 
 input.wpcf7-form-control.wpcf7-submit {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 30px auto;
  }
 
  .entry-content .center-bloc-s{
@@ -351,8 +356,12 @@ box-shadow: 0 10px 0 #dcd5cf;
     width: 100%;
     background-image: url("./assets/images/Group 17.png");
     background-size: contain;
+    bottom:60px;
 }
 
+.entry-content .footer-deco{
+    padding-bottom : 120px;
+}
 
 /* .container {
     width: 100%;
@@ -388,6 +397,7 @@ box-shadow: 0 10px 0 #dcd5cf;
 .entry-content .wpcf7 label{
 padding-top : 30px;
 display:block;
+color: #000000;
 }
 
 .wpcf7-form-control-wrap{
@@ -494,4 +504,17 @@ height: 262px;
 
 .wp-block-gallery.has-nested-images figure.wp-block-image{
     flex-grow:unset;
+}
+
+.blocks-gallery-grid .blocks-gallery-image, .blocks-gallery-grid .blocks-gallery-item, .wp-block-gallery .blocks-gallery-image, .wp-block-gallery .blocks-gallery-item {
+  flex-grow: inherit;
+}
+
+.entry-content .text-black{
+    color:#000000;
+}
+
+
+.entry-content .margin-s{
+    margin-bottom:30px;
 }
