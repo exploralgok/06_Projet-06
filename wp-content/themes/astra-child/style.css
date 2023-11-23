@@ -330,14 +330,12 @@ input.wpcf7-form-control.wpcf7-submit {
     border-radius:0px 0px 50% 50% / 0px 0px 100px 100px
 }
 
-
-.round-section-shadow{
-height: 60px;
-width: 100%;
-background-color: #ECE2DA;
-border-radius: 0 0 80% 80%;
-box-shadow: 0 10px 0 #dcd5cf;
+.round-section-s{
+    border-radius: 50% / 0% 0% 3% 3%;
 }
+.round-section-shadow{
+    border-radius: 50% / 0% 0% 10% 10%;
+    box-shadow: 0 10px 0 #dcd5cf;}
 
 .wpcf7 form.sent .wpcf7-response-output {
     border: none;
