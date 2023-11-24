@@ -255,7 +255,7 @@ body{
     left :29%;
 }
 
-.flower-two::before{
+.flower::before{
     position: absolute;
     content: "";
     display: block;
@@ -264,10 +264,8 @@ body{
     background-image: url("./assets/images/Group 16.png");
     background-repeat: no-repeat;
     background-size: contain;
-    bottom:13.5%;
-    left :38%;
-
-
+    bottom:40px;
+    left :40px;
 }
 
 
@@ -542,4 +540,21 @@ height: 262px;
 
 .entry-content .margin-s{
     margin-bottom:30px;
+}
+
+
+.width-s{
+    width:700px;
+}
+    
+.width-m{
+    width:829px;
+}
+
+.page-id-20 .site-footer::before {
+        display: none;
+}
+
+.entry-content .no-footer{
+    padding:70px 0px 50px 0px;
 }
