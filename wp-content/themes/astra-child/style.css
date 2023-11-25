@@ -110,7 +110,7 @@ body{
 
 .entry-content .wp-block-group .text-l{
     font-weight: 800;
-    font-size:30px;
+    font-size:38px;
 }
 
 .entry-content .text-m{
@@ -236,23 +236,27 @@ body{
     background-image: url("./assets/images/Group 4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top:37.7%;
-    right :27%;
+    top:124px;
+    right :-220px;
     transform: scaleX(-1);
     ;
+}
+
+.deco{
+    position:relative;
 }
 
 .flower-one::before{
     position: absolute;
     content: "";
     display: block;
-    height: 147px;
-    width: 134px;
-    background-image: url("./assets/images/Group 2.svg");
+    height: 150px;
+    width: 145px;
+    background-image: url("./assets/images/Group 2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top:9.5%;
-    left :29%;
+    top:-88px;
+    left :-190px;
 }
 
 .flower::before{
@@ -264,8 +268,8 @@ body{
     background-image: url("./assets/images/Group 16.png");
     background-repeat: no-repeat;
     background-size: contain;
-    bottom:40px;
-    left :40px;
+    bottom:80px;
+    left :-63px;
 }
 
 
