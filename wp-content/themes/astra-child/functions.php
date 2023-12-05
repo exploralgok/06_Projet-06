@@ -31,21 +31,35 @@ function add_google_fonts() {
 
 
 
-function ajouter_lien_admin_menu($items, $args) {
-     if ($args->theme_location == 'primary' && is_user_logged_in() && current_user_can('administrator')) {
-         $lien_admin = '<li class="menu-item"><a href="http://localhost:8888/wp-admin/"  class="menu-link">Admin</a></li>';
+// function ajouter_lien_admin_menu($items, $args) {
+//      if ($args->theme_location == 'primary' && is_user_logged_in() && current_user_can('administrator')) {
+//          $lien_admin = '<li class="menu-item"><a href="http://localhost:8888/wp-admin/"  class="menu-link">Admin</a>';
         
-         // Divisez le menu en un tableau d'éléments
-         $menu_items = explode('</li>', $items);
+//          // Divisez le menu en un tableau d'éléments
+//          $menu_items = explode('</li>', $items);
 
-         // Insérez le lien administrateur en deuxième position
-         array_splice($menu_items, 1, 0, $lien_admin);
+//          // Insérez le lien administrateur en deuxième position
+//          array_splice($menu_items, 1, 0, $lien_admin);
 
-         // Rejoignez à nouveau les éléments du menu en une chaîne
-         $items = implode('</li>', $menu_items);
-     }
-     return $items;
- }
+//          // Rejoignez à nouveau les éléments du menu en une chaîne
+//          $items = implode('</li>', $menu_items);
+//      }
+//      return $items;
+//  }
+
+function ajouter_lien_admin_menu($items, $args) {
+    if ($args->theme_location == 'primary' && is_user_logged_in() && current_user_can('administrator')) {
+        
+        $lien_admin = '<li class="menu-item"><a href="http://localhost:8888/wp-admin/"  class="menu-link">Admin</a></li>';
+
+        // Recherche de la première occurrence de '</li>' dans $items
+        $pos = strpos($items, '</li>');
+
+        // Insère le lien administrateur après la première balise '</li>'
+        $items = substr_replace($items, $lien_admin, $pos+5, 0);
+    }
+    return $items;
+}
 
  add_filter('wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 2);
 
