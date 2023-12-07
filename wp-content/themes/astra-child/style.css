@@ -12,13 +12,75 @@ Template: astra
 
 /* @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap'); */
 
+/***********/
 /* GENERAL */
+/***********/
 
 body{
     font-family: "Syne";
 }
 
+.entry-content .text-green{
+    color:#3b8e46;
+}
+
+.entry-content .text-pink{
+    color:#D2776A;
+}
+
+.entry-content .text-white{
+    color:#ffffff;
+}
+
+/* .entry-content .subtitle{
+    font-weight: 700;
+    font-size: 30px;
+} */
+/* 
+.entry-content h1{
+    font-weight: 800;
+    font-size: 38px;
+    text-transform: uppercase;
+} */
+/* 
+ .entry-content h2{
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+} */
+
+
+.entry-content .weight-m{
+    font-weight: 700;
+}
+
+.entry-content .weight-l{
+    font-weight: 800;
+}
+
+
+.entry-content .text-l{
+    font-size:30px;
+} 
+
+.entry-content .text-xl{
+    font-size:38px;
+}
+
+ .entry-content .big-case{
+    text-transform:uppercase;
+}
+
+.entry-content .weight-s{
+    font-weight: 400;
+}
+
+.entry-content .text-m{
+    font-size:20px;
+}
+/**********/
 /* HEADER */
+/**********/
 
 .site-header .menu-item a{
     color:#000000 !important;
@@ -86,37 +148,126 @@ body{
     background-color: #ffffff;
 }
 
-/* HOME */
+/**********/
+/** HOME **/
+/**********/
 
-.entry-content .title-home{
+
+/* titre home */
+.entry-content .padding-m{
+    padding-top : 40px;
+    padding-bottom : 90px
+}
+
+/* h2 energie home */
+
+.entry-content .margin-s{
+    margin-top: 40px ;
+    margin-bottom: 25px;}
+
+.entry-content .margin-xs{
+margin-bottom:20px
+}
+
+.entry-content .margin-xxs{
+    margin-bottom:10px
+    }
+
+.entry-content .margin-top-xxs{
+        margin-top:5px
+        }
+
+/* HOME : SECTION 1 */
+
+.light-color-section{
+    background-color: #E3D9D0;
+}
+
+.round-section-shadow{
+    border-radius: 90% / 0% 0% 10% 10%;
+    box-shadow: 0 10px 0 #dcd5cf;
+}
+
+/* HOME : CANETTE */
+
+.entry-content .deco-picture{
+    width: 234px;
+    height: 498px;
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+.entry-content .deco-picture img{
+    z-index: 1;
+    position: relative;
+}
+
+.deco-picture::after{
+    content: "";
+    display: block;
+    height: 400px;
+    width: 350px;
+    background-image: url("./assets/images/Group 4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top : 15%;
+    left : 58%;
+}
+
+.deco-picture::before{
+    content: "";
+    display: block;
+    height: 400px;
+    width: 350px;
+    background-image: url("./assets/images/Group 4.png");
+    position: absolute;
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top : 15% ;
+    right :42% ; 
+}
+
+/* HOME : SECTION 2 */
+
+
+/* HOME : GOUT  */
+
+.entry-content .margin-negative{
+    margin-top : -30px
+}
+
+.wp-block-buttons>.wp-block-button{
+    background-color: #E3D9D0;
+}
+
+
+/* HOME : AVIS */
+
+.entry-content .margin-m{
+    margin-top: 70px ;
+    margin-bottom: 60px;
+}
+
+/* #### */
+
+/* .entry-content .text-l{
     font-weight: 800;
-    color:#3b8e46;
     font-size:38px;
     text-transform:uppercase;
-    padding-top : 105px;
-}
+} */
 
-.entry-content .text-l{
+/* .entry-content .wp-block-group .text-l{
     font-weight: 800;
     font-size:38px;
-    text-transform:uppercase;
-}
+} */
 
-.entry-content .subtitle-green{
-    font-weight: 700;
-    color:#3b8e46;
-    font-size:30px;
-}
-
-.entry-content .wp-block-group .text-l{
-    font-weight: 800;
-    font-size:38px;
-}
-
-.entry-content .text-m{
+/* .entry-content .text-m{
     font-weight: 400;
     font-size:20px;
-}
+} */
 
 .entry-content .text-s{
     font-weight: 700;
@@ -129,24 +280,13 @@ body{
 }
 
 
-.entry-content .text-green{
-    color:#3b8e46;
-}
 
-.entry-content .text-pink{
-    color:#D2776A;
-}
-
-.entry-content .text-white{
-    color:#ffffff;
-}
-
-.entry-content .subtitle-pink{
+/* .entry-content .subtitle-pink{
     color: #D2776A;
     font-size:30px;
     font-weight:800 !important;
     text-transform: uppercase;
-}
+} */
 
 .entry-content .wp-block-group .wp-block-columns .cover-m .wp-block-cover__image-background{
     width: 393px;
@@ -167,58 +307,9 @@ body{
 
 
 
-.entry-content .deco-picture{
-    width: 234px;
-    height: 498px;
-    z-index: 8;
-    position: relative;
-    /* position:relative; */
-}
-
-.entry-content .deco-picture img{
-    z-index: 1;
-    position: relative;
-    /* position:relative; */
-}
-
-/* .deco-picture{
-    height: 500px;
-    position: absolute;
-    z-index: 1;
-} */
-
-.deco-picture::after{
-    content: "";
-   display: block;
-    height: 400px;
-    width: 350px;
-    background-image: url("./assets/images/Group 4.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top : 15%;
-    left : 58%;
-}
 
 
 
-.deco-picture::before{
-    content: "";
-    display: block;
-    height: 400px;
-    width: 350px;
-    background-image: url("./assets/images/Group 4.png");
-    position: absolute;
-    transform: scaleX(-1);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top : 15% ;
-    right :42% ; 
-}
-
-.light-color-section{
-    background-color: #E3D9D0;
-}
 
 /* supprimer l'effet du thème dans le menu */
 .secondary a *, .site-footer a *, .site-header a *, a {
@@ -336,9 +427,7 @@ input.wpcf7-form-control.wpcf7-submit {
 .round-section-s{
     border-radius: 50% / 0% 0% 3% 3%;
 }
-.round-section-shadow{
-    border-radius: 50% / 0% 0% 10% 10%;
-    box-shadow: 0 10px 0 #dcd5cf;}
+
 
 .wpcf7 form.sent .wpcf7-response-output {
     border: none;
@@ -461,9 +550,6 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     margin-top : 69px;
 }
 
-.wp-block-buttons>.wp-block-button{
-    background-color: #ece2da;
-}
 
 
 /* .wp-container-29.wp-container-29, .wp-container-31.wp-container-31, .wp-container-33.wp-container-33 {
