@@ -192,6 +192,7 @@ body{
     background-color: #ffffff;
 }
 
+/* canette dans le footer */
 .site-footer::before{
     position: absolute;
     content: "";
@@ -207,7 +208,7 @@ body{
     padding-bottom : 190px;
 }
 
-/* no footer page commander */
+/* pas d'affichage des canettes sur la page commander */
 .page-id-20 .site-footer::before {
     display: none;
 }
