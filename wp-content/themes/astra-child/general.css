@@ -1,0 +1,97 @@
+body{
+    font-family: "Syne";
+}
+
+.entry-content .text-green{
+    color:#3b8e46;
+}
+
+.entry-content .text-pink{
+    color:#D2776A;
+}
+
+.entry-content .text-white{
+    color:#ffffff;
+}
+
+/* .entry-content .subtitle{
+    font-weight: 700;
+    font-size: 30px;
+} */
+/* 
+.entry-content h1{
+    font-weight: 800;
+    font-size: 38px;
+    text-transform: uppercase;
+} */
+/* 
+ .entry-content h2{
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+} */
+
+
+.entry-content .weight-m{
+    font-weight: 700;
+}
+
+.entry-content .weight-l{
+    font-weight: 800;
+}
+
+
+.entry-content .text-l{
+    font-size:30px;
+} 
+
+.entry-content .text-xl{
+    font-size:38px;
+}
+
+ .entry-content .big-case{
+    text-transform:uppercase;
+}
+
+.entry-content .weight-s{
+    font-weight: 400;
+}
+
+.entry-content .text-m{
+    font-size:20px;
+}
+
+
+.entry-content .text-black{
+    color:#000000;
+}
+
+.entry-content .margin-s{
+    margin-bottom:30px;
+}
+
+.width-s{
+    width:700px;
+}
+    
+.width-m{
+    width:829px;
+}
+
+.width-m{
+    max-width: 345px;
+
+}
+
+.gap-s{
+    gap: 10px;
+}
+
+.line-height-s{
+line-height: 19.2px;
+}
+
+
+.gap-l{
+    gap:70px;
+}
